@@ -1,211 +1,245 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tintforge Privacy Policy</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tintforge - Privacy Policy</title>
     <style>
-      :root {
-        color-scheme: light;
-        font-family: Inter, Arial, sans-serif;
-        color: #1f2933;
-        background: #f7f4ee;
-      }
-
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
       body {
-        margin: 0;
-        padding: 32px 18px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: #0f1116;
+        color: #d4d8e8;
+        line-height: 1.75;
+        padding: 0 16px 80px;
       }
-
-      main {
-        max-width: 860px;
-        margin: 0 auto;
-        padding: 28px;
-        border: 1px solid rgba(31, 41, 51, 0.12);
-        border-radius: 8px;
-        background: #fffdf8;
-        box-shadow: 0 18px 44px rgba(31, 41, 51, 0.08);
+      .container { max-width: 760px; margin: 0 auto; }
+      header {
+        padding: 56px 0 40px;
+        border-bottom: 1px solid #2a2d3a;
+        margin-bottom: 48px;
       }
-
-      h1, h2 {
-        color: #172026;
-        line-height: 1.2;
+      .app-name {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #f4b94a;
+        margin-bottom: 10px;
       }
-
-      h1 {
-        margin: 0 0 8px;
-        font-size: 2rem;
+      .app-mark {
+        display: inline-grid;
+        place-items: center;
+        width: 22px;
+        height: 22px;
+        border-radius: 5px;
+        background: #f4b94a;
+        color: #101218;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0;
       }
-
+      h1 { font-size: 32px; font-weight: 700; color: #f0f2ff; margin-bottom: 8px; }
+      .meta { font-size: 14px; color: #6b7280; }
+      section { margin-bottom: 40px; }
       h2 {
-        margin-top: 28px;
-        font-size: 1.2rem;
+        font-size: 18px;
+        font-weight: 700;
+        color: #e8eaf6;
+        margin-bottom: 14px;
+        padding-left: 14px;
+        border-left: 3px solid #f4b94a;
       }
-
-      p, li {
-        font-size: 0.98rem;
-        line-height: 1.65;
+      h3 {
+        color: #d4d8e8;
+        margin: 18px 0 8px;
+        font-size: 15px;
       }
-
-      ul {
-        padding-left: 22px;
+      p { margin-bottom: 12px; color: #b0b8d0; }
+      ul, ol { padding-left: 22px; margin-bottom: 12px; }
+      li { margin-bottom: 6px; color: #b0b8d0; }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 12px;
+        font-size: 14px;
       }
-
-      a {
-        color: #1f6feb;
+      th {
+        text-align: left;
+        padding: 10px 14px;
+        background: #1a1d2a;
+        color: #e8eaf6;
+        border-bottom: 1px solid #2a2d3a;
       }
-
-      .updated {
-        margin-top: 0;
-        color: #5f6b76;
-        font-size: 0.9rem;
+      td {
+        padding: 10px 14px;
+        color: #b0b8d0;
+        border-bottom: 1px solid #1e2130;
+        vertical-align: top;
       }
-
+      a { color: #f4b94a; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .contact-box {
+        background: #1a1d2a;
+        border: 1px solid #2a2d3a;
+        border-radius: 12px;
+        padding: 24px;
+        margin-top: 12px;
+      }
+      footer {
+        margin-top: 60px;
+        padding-top: 24px;
+        border-top: 1px solid #2a2d3a;
+        font-size: 13px;
+        color: #4b5563;
+        text-align: center;
+      }
       @media (max-width: 640px) {
-        body {
-          padding: 16px 10px;
-        }
-
-        main {
-          padding: 20px;
-        }
-
-        h1 {
-          font-size: 1.65rem;
-        }
+        body { padding: 0 14px 64px; }
+        header { padding: 44px 0 32px; margin-bottom: 36px; }
+        h1 { font-size: 28px; }
+        table { display: block; overflow-x: auto; }
       }
     </style>
   </head>
   <body>
-    <main>
-      <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: April 29, 2026</p>
+    <div class="container">
+      <header>
+        <div class="app-name"><span class="app-mark">T</span> Tintforge</div>
+        <h1>Privacy Policy</h1>
+        <p class="meta">Effective date: April 29, 2026 &nbsp;·&nbsp; Last updated: April 29, 2026</p>
+      </header>
 
-      <p>
-        This Privacy Policy explains how Nawm Labs ("we", "us", or "our") handles information
-        when you use Tintforge, including the Android app distributed through Google Play.
-      </p>
+      <section>
+        <h2>1. Overview</h2>
+        <p>Tintforge ("the App") is a color puzzle game published by Nawm Labs. This Privacy Policy explains what information we collect, how we use it, and the choices you have regarding your data.</p>
+      </section>
 
-      <h2>Developer and contact</h2>
-      <p>
-        Developer: Nawm Labs<br />
-        App: Tintforge<br />
-        Privacy contact: <a href="mailto:nawmlabs@gmail.com">nawmlabs@gmail.com</a>
-      </p>
+      <section>
+        <h2>2. Information We Collect</h2>
 
-      <h2>Information we collect</h2>
-      <p>Depending on how you use Tintforge, we may collect or process the following information:</p>
-      <ul>
-        <li>
-          Account information, such as your Firebase user ID and, when you sign in with Google Play
-          Games or Google, account identifiers such as display name or email address provided by
-          those services.
-        </li>
-        <li>
-          Gameplay and progress information, such as completed stages, stars, scores, stage sessions,
-          reward claims, coins, hearts, item inventory, and related timestamps.
-        </li>
-        <li>
-          Purchase information, such as product identifiers, transaction identifiers, purchase status,
-          refund status, entitlement delivery records, and purchase event timestamps.
-        </li>
-        <li>
-          Advertising reward information, such as rewarded ad transaction identifiers, reward type,
-          reward amount, user ID, nonce, and server-side verification status.
-        </li>
-        <li>
-          Local app data stored on your device, such as game progress, economy state, settings, cached
-          stage data, and cached remote assets.
-        </li>
-        <li>
-          Technical information processed by service providers, such as device, app, network,
-          diagnostic, advertising, and anti-abuse information needed to operate Firebase, Google Play
-          services, AdMob, Google Play Billing, and RevenueCat.
-        </li>
-      </ul>
+        <h3>2.1 Account Information</h3>
+        <p>When you use Tintforge, Firebase Authentication may assign a user ID. If you connect Google Play Games or Google sign-in, we may receive account identifiers such as display name or email address provided by those services.</p>
 
-      <h2>How we use information</h2>
-      <p>We use information to:</p>
-      <ul>
-        <li>Authenticate users and support Google Play Games or Google sign-in.</li>
-        <li>Save and sync game progress, rewards, economy state, and purchases.</li>
-        <li>Deliver in-app purchases and verify purchase or refund events.</li>
-        <li>Show rewarded ads and validate rewards through server-side verification.</li>
-        <li>Provide remote game assets and gameplay data.</li>
-        <li>Prevent abuse, fraud, duplicate rewards, and unauthorized economy changes.</li>
-        <li>Maintain, debug, secure, and improve the app.</li>
-        <li>Respond to support, privacy, and account deletion requests.</li>
-      </ul>
+        <h3>2.2 Gameplay Data</h3>
+        <p>We store gameplay information needed to operate the game, including completed stages, stars, scores, stage sessions, reward claims, coins, hearts, item inventory, and related timestamps.</p>
 
-      <h2>Third-party services</h2>
-      <p>
-        Tintforge uses third-party services that may process information under their own terms and
-        privacy policies:
-      </p>
-      <ul>
-        <li>Google Firebase, including Authentication, Cloud Functions, Firestore, and Storage.</li>
-        <li>Google Play Games services for sign-in and gameplay account connection.</li>
-        <li>Google AdMob for rewarded ads and ad reward verification.</li>
-        <li>Google Play Billing for Android in-app purchases.</li>
-        <li>RevenueCat for purchase validation, entitlement processing, and purchase event handling.</li>
-      </ul>
+        <h3>2.3 Purchase Data</h3>
+        <p>For in-app purchases, we process product identifiers, transaction identifiers, purchase status, refund status, entitlement delivery records, and purchase event timestamps. Purchases are processed through Google Play Billing and RevenueCat.</p>
 
-      <h2>Sharing of information</h2>
-      <p>
-        We do not sell personal information. We share information with service providers only as
-        needed to operate Tintforge, including authentication, cloud storage, rewards, ads, purchases,
-        fraud prevention, diagnostics, and support. We may also disclose information if required by
-        law, to protect rights and safety, or to investigate abuse.
-      </p>
+        <h3>2.4 Advertising Reward Data</h3>
+        <p>When you watch rewarded ads, Google AdMob and our servers may process reward transaction identifiers, reward type, reward amount, user ID, nonce, and server-side verification status.</p>
 
-      <h2>Security</h2>
-      <p>
-        We use reasonable technical and organizational measures to protect information, including
-        encrypted connections, Firebase access controls, authenticated server operations, and limited
-        access to user-specific cloud records. No method of transmission or storage is completely
-        secure, so we cannot guarantee absolute security.
-      </p>
+        <h3>2.5 Local App Data</h3>
+        <p>Tintforge stores some data locally on your device, such as progress, economy state, settings, cached stage data, and cached remote assets.</p>
 
-      <h2>Retention and deletion</h2>
-      <p>
-        Local game data remains on your device until you clear app data, uninstall the app, or the
-        app replaces cached data during normal operation. Cloud data is kept while needed to provide
-        gameplay sync, rewards, purchase fulfillment, fraud prevention, support, and legal compliance.
-      </p>
-      <p>
-        You can request deletion of your Tintforge account and associated cloud gameplay data by
-        visiting our <a href="./account-deletion.html">Account Deletion page</a> or by emailing
-        <a href="mailto:nawmlabs@gmail.com">nawmlabs@gmail.com</a>. Some purchase, fraud-prevention,
-        tax, accounting, security, or legal records may be retained as required or permitted by law.
-      </p>
+        <h3>2.6 Technical Data</h3>
+        <p>Our service providers may process device, app, network, diagnostic, advertising, and anti-abuse information needed to operate Firebase, Google Play services, AdMob, Google Play Billing, and RevenueCat.</p>
+      </section>
 
-      <h2>Your choices</h2>
-      <ul>
-        <li>You can choose whether to connect Google Play Games or Google sign-in.</li>
-        <li>You can manage ad personalization through Google and device settings where available.</li>
-        <li>You can clear local app data through your device settings.</li>
-        <li>You can request deletion of cloud account data using the contact above.</li>
-      </ul>
+      <section>
+        <h2>3. How We Use Your Information</h2>
+        <ul>
+          <li>To authenticate users and support Google Play Games or Google sign-in</li>
+          <li>To save and sync game progress, rewards, economy state, and purchases</li>
+          <li>To deliver in-app purchases and verify purchase or refund events</li>
+          <li>To show rewarded ads and validate rewards through server-side verification</li>
+          <li>To provide remote game assets and gameplay data</li>
+          <li>To prevent abuse, fraud, duplicate rewards, and unauthorized economy changes</li>
+          <li>To maintain, debug, secure, and improve the App</li>
+          <li>To respond to support, privacy, and account deletion requests</li>
+        </ul>
+      </section>
 
-      <h2>Children</h2>
-      <p>
-        Tintforge is not directed to children under 13. We do not knowingly collect personal
-        information from children under 13. If you believe a child has provided personal information,
-        contact us so we can review and delete it where appropriate.
-      </p>
+      <section>
+        <h2>4. Third-Party Services</h2>
+        <p>We share data only with service providers as necessary to operate Tintforge:</p>
+        <table>
+          <thead>
+            <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Google Firebase</td><td>Authentication, Cloud Functions, Firestore, and Storage</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Link</a></td></tr>
+            <tr><td>Google Play Games</td><td>Game account connection and sign-in</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td></tr>
+            <tr><td>Google AdMob</td><td>Rewarded advertising and ad reward verification</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td></tr>
+            <tr><td>Google Play Billing</td><td>Android in-app purchase processing</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td></tr>
+            <tr><td>RevenueCat</td><td>Purchase validation and entitlement processing</td><td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Link</a></td></tr>
+          </tbody>
+        </table>
+        <p>We do not sell your personal data to third parties.</p>
+      </section>
 
-      <h2>International processing</h2>
-      <p>
-        Information may be processed in countries other than where you live, including where our
-        service providers operate systems and infrastructure.
-      </p>
+      <section>
+        <h2>5. Data Retention</h2>
+        <p>Cloud data is kept while needed to provide gameplay sync, rewards, purchase fulfillment, fraud prevention, support, and legal compliance.</p>
+        <table>
+          <thead>
+            <tr><th>Data Type</th><th>Retention Period</th><th>Deleted Upon Account Deletion</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Firebase user account data</td><td>Until account deletion or as needed for service operation</td><td>Yes, where reasonably possible</td></tr>
+            <tr><td>Gameplay progress and economy data</td><td>While the account exists or until deletion is requested</td><td>Yes</td></tr>
+            <tr><td>Reward and stage records</td><td>While needed for sync, anti-abuse, and support</td><td>Yes, where reasonably possible</td></tr>
+            <tr><td>Purchase and refund records</td><td>As needed for fulfillment, fraud prevention, accounting, and legal compliance</td><td>Partial</td></tr>
+            <tr><td>Advertising identifiers</td><td>Managed by Google AdMob and device settings</td><td>Managed by Google or device settings</td></tr>
+            <tr><td>Local device data</td><td>Until you clear app data, uninstall the app, or the app replaces cached data</td><td>Clear app data or uninstall</td></tr>
+          </tbody>
+        </table>
+      </section>
 
-      <h2>Changes to this policy</h2>
-      <p>
-        We may update this Privacy Policy from time to time. When we make changes, we will update the
-        "Last updated" date above. Continued use of Tintforge after an update means the revised policy
-        applies.
-      </p>
-    </main>
+      <section>
+        <h2>6. Account Deletion</h2>
+        <p>You may request deletion of your Tintforge account and associated cloud gameplay data at any time.</p>
+        <ol>
+          <li>Email <a href="mailto:nawmlabs@gmail.com">nawmlabs@gmail.com</a> with the subject line: <strong>"Tintforge Account Deletion Request"</strong></li>
+          <li>Send the request from the email address connected to your Google Play Games or Google account if possible.</li>
+          <li>Include your Tintforge player name or Google Play Games display name if available.</li>
+        </ol>
+        <p>For details, visit the <a href="./account-deletion.html">Tintforge Account Deletion page</a>.</p>
+      </section>
+
+      <section>
+        <h2>7. Children's Privacy</h2>
+        <p>Tintforge is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided personal information, please contact us so we can review and delete it where appropriate.</p>
+      </section>
+
+      <section>
+        <h2>8. Your Rights and Choices</h2>
+        <ul>
+          <li>You can choose whether to connect Google Play Games or Google sign-in.</li>
+          <li>You can manage ad personalization through Google and device settings where available.</li>
+          <li>You can clear local app data through your device settings.</li>
+          <li>You can request access, correction, or deletion of cloud account data by contacting us.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>9. Security</h2>
+        <p>We use reasonable technical and organizational measures to protect information, including encrypted connections, Firebase access controls, authenticated server operations, and limited access to user-specific cloud records. No method of transmission or storage is completely secure.</p>
+      </section>
+
+      <section>
+        <h2>10. International Processing</h2>
+        <p>Information may be processed in countries other than where you live, including where our service providers operate systems and infrastructure.</p>
+      </section>
+
+      <section>
+        <h2>11. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of changes by updating the "Last updated" date at the top of this page.</p>
+      </section>
+
+      <section>
+        <h2>12. Contact</h2>
+        <div class="contact-box">
+          <p>If you have any questions about this Privacy Policy, please contact us:</p>
+          <p><a href="mailto:nawmlabs@gmail.com">nawmlabs@gmail.com</a></p>
+        </div>
+      </section>
+
+      <footer>&copy; 2026 Tintforge. All rights reserved.</footer>
+    </div>
   </body>
 </html>
